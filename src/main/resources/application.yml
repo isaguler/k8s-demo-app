@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      host: ${MONGO_HOST:localhost}
+      username: ${MONGO_USER:root}
+      password: ${MONGO_PWD:ig123}
+      port: ${MONGO_PORT:27017}
+      database: ${MONGO_DB:company}
+      authentication-database: admin
+      #uri: ${MONGO_URL}
+  jpa:
+    hibernate:
+      ddl-auto: update
